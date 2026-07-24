@@ -1,0 +1,42 @@
+{
+  "name": "@maxlmgc/mysql-mcp",
+  "version": "1.0.0",
+  "description": "MySQL Model Context Protocol server",
+  "main": "./build/index.js",
+  "type": "module",
+  "bin": {
+    "mysql-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./build/index.js",
+    "dev": "set MYSQL_HOST=localhost&& set MYSQL_PORT=3306&& set MYSQL_USER=root&& set MYSQL_PASS=lmgc&& set MYSQL_DB=learn&& set PORT=8090&& nodemon --exec tsx ./src/index.ts",
+    "dev:readonly": "set MYSQL_HOST=localhost&& set MYSQL_PORT=3306&& set MYSQL_USER=root&& set MYSQL_PASS=lmgc&& set MYSQL_DB=learn&& set MYSQL_READONLY=true&& set PORT=8090&& nodemon --exec tsx ./src/index.ts",
+    "dev:noreadonly": "set MYSQL_HOST=localhost&& set MYSQL_PORT=3306&& set MYSQL_USER=root&& set MYSQL_PASS=lmgc&& set MYSQL_DB=learn&& set MYSQL_READONLY=false&& set PORT=8090&& nodemon --exec tsx ./src/index.ts",
+    "clean": "if exist build rmdir /s /q build",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "mysql",
+    "mcp",
+    "modelcontextprotocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@types/express": "^5.0.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.20.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
