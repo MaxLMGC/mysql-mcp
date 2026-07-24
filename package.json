@@ -16,7 +16,7 @@
     "dev": "set MYSQL_HOST=localhost&& set MYSQL_PORT=3306&& set MYSQL_USER=root&& set MYSQL_PASS=lmgc&& set MYSQL_DB=learn&& set PORT=8090&& nodemon --exec tsx ./src/index.ts",
     "dev:readonly": "set MYSQL_HOST=localhost&& set MYSQL_PORT=3306&& set MYSQL_USER=root&& set MYSQL_PASS=lmgc&& set MYSQL_DB=learn&& set MYSQL_READONLY=true&& set PORT=8090&& nodemon --exec tsx ./src/index.ts",
     "dev:noreadonly": "set MYSQL_HOST=localhost&& set MYSQL_PORT=3306&& set MYSQL_USER=root&& set MYSQL_PASS=lmgc&& set MYSQL_DB=learn&& set MYSQL_READONLY=false&& set PORT=8090&& nodemon --exec tsx ./src/index.ts",
-    "clean": "if exist build rmdir /s /q build",
+    "clean": "rimraf build",
     "prepublishOnly": "npm run clean && npm run build"
   },
   "keywords": [
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@types/node": "^25.5.2",
     "nodemon": "^3.1.14",
+    "rimraf": "^6.1.3",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2"
   }
