@@ -95,16 +95,6 @@ npm install @maxlmgc/mysql-mcp
 }
 ```
 
-## 开发
-
-```bash
-git clone https://github.com/MaxLMGC/mysql-mcp.git
-cd mysql-mcp
-npm install
-npm run dev              # 只读模式（默认）
-npm run dev:noreadonly   # 完整权限模式
-```
-
 ## 安全设计
 
 - **只读默认**：默认仅暴露查询工具，`sql_execute` 不会注册

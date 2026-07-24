@@ -97,16 +97,6 @@ Only allow SELECT and SHOW:
 }
 ```
 
-## Development
-
-```bash
-git clone https://github.com/MaxLMGC/mysql-mcp.git
-cd mysql-mcp
-npm install
-npm run dev              # read-only mode (default)
-npm run dev:noreadonly   # full access mode
-```
-
 ## Security
 
 - **Read-only by default**: `sql_execute` is not registered in read-only mode
