@@ -1,6 +1,6 @@
 {
   "name": "@maxlmgc/mysql-mcp",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "MySQL Model Context Protocol server",
   "main": "./build/index.js",
   "type": "module",
