@@ -3,4 +3,3 @@ build/
 build-cjs/
 .env
 *.log
-.npmrc
