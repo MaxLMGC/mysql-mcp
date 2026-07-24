@@ -4,9 +4,7 @@
   "description": "MySQL Model Context Protocol server",
   "main": "./build/index.js",
   "type": "module",
-  "bin": {
-    "mysql-mcp": "./build/index.js"
-  },
+  "bin": "./build/index.js",
   "files": [
     "build"
   ],
