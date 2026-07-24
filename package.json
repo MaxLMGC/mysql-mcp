@@ -1,6 +1,6 @@
 {
   "name": "@maxlmgc/mysql-mcp",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "MySQL Model Context Protocol server",
   "main": "./build/index.js",
   "type": "module",
@@ -22,13 +22,6 @@
     "mcp",
     "modelcontextprotocol"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MaxLMGC/mysql-mcp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/MaxLMGC/mysql-mcp/issues"
-  },
   "homepage": "https://github.com/MaxLMGC/mysql-mcp#readme",
   "author": "",
   "license": "MIT",

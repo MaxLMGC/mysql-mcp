@@ -2,7 +2,7 @@
 
 > MySQL MCP Server — 为 AI 客户端提供 MySQL 数据库交互能力的 MCP 服务，默认只读安全。
 
-[English](./README.md)
+[English](https://github.com/MaxLMGC/mysql-mcp/blob/main/README.md)
 
 ## 功能
 
@@ -98,7 +98,7 @@ npm install @maxlmgc/mysql-mcp
 ## 开发
 
 ```bash
-git clone git@github.com:MaxLMGC/mysql-mcp.git
+git clone https://github.com/MaxLMGC/mysql-mcp.git
 cd mysql-mcp
 npm install
 npm run dev              # 只读模式（默认）

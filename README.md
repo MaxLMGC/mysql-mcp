@@ -2,7 +2,7 @@
 
 > MySQL MCP Server — a secure, read-only-by-default MySQL integration for AI clients via the Model Context Protocol.
 
-[中文文档](./README_CN.md)
+[中文文档](https://github.com/MaxLMGC/mysql-mcp/blob/main/README_CN.md)
 
 ## Tools
 
@@ -100,7 +100,7 @@ Only allow SELECT and SHOW:
 ## Development
 
 ```bash
-git clone git@github.com:MaxLMGC/mysql-mcp.git
+git clone https://github.com/MaxLMGC/mysql-mcp.git
 cd mysql-mcp
 npm install
 npm run dev              # read-only mode (default)
