@@ -1,12 +1,13 @@
 {
   "name": "@maxlmgc/mysql-mcp",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "MySQL Model Context Protocol server",
   "main": "./build/index.js",
   "type": "module",
   "bin": "build/index.js",
   "files": [
-    "build"
+    "build",
+    "README_CN.md"
   ],
   "scripts": {
     "build": "tsc",
@@ -26,7 +27,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@maxlmgc/mysql-mcp": "^1.0.7",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "@types/express": "^5.0.6",
     "express": "^5.2.1",
